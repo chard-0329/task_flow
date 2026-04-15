@@ -84,6 +84,8 @@ Set this Vercel environment variable:
 VITE_API_URL=https://your-railway-backend.up.railway.app/api
 ```
 
+Do not set `VITE_API_URL` to your Vercel frontend URL and do not use `localhost` in Vercel. The value must be the Railway backend public URL ending in `/api`.
+
 Redeploy Vercel after adding or changing environment variables.
 
 ## 3. Required Cross-Origin Settings
@@ -95,6 +97,8 @@ In Railway:
 ```text
 CLIENT_ORIGINS=https://your-vercel-app.vercel.app
 ```
+
+Do not include a path such as `/tasks` in `CLIENT_ORIGINS`. CORS receives only the origin, for example `https://task-manage-rho.vercel.app`.
 
 For multiple frontend URLs, separate them with commas:
 
