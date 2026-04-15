@@ -84,7 +84,7 @@ Set this Vercel environment variable:
 VITE_API_URL=https://your-railway-backend.up.railway.app/api
 ```
 
-Do not set `VITE_API_URL` to your Vercel frontend URL and do not use `localhost` in Vercel. The value must be the Railway backend public URL ending in `/api`.
+Do not set `VITE_API_URL` to your Vercel frontend URL. The value must be the Railway backend public URL ending in `/api`.
 
 Redeploy Vercel after adding or changing environment variables.
 
@@ -114,32 +114,16 @@ Secure=true
 HttpOnly=true
 ```
 
-## 4. Local Development
-
-Backend:
-
-```powershell
-cd server
-npm install
-npm run dev
-```
+## 4. Production URLs
 
 Frontend:
 
-```powershell
-cd client
-npm install
-npm run dev
+```text
+https://task-manage-rho.vercel.app
 ```
 
-Local frontend URL:
+Backend:
 
 ```text
-http://localhost:5173
-```
-
-Local backend URL:
-
-```text
-http://localhost:5000/api
+https://taskflow-production-c4a0.up.railway.app/api
 ```

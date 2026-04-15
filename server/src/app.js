@@ -9,7 +9,7 @@ import taskRoutes from './routes/taskRoutes.js';
 dotenv.config({ path: fileURLToPath(new URL('../.env', import.meta.url)) });
 
 const app = express();
-const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173')
+const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'https://task-manage-rho.vercel.app')
   .split(',')
   .map((origin) => origin.trim())
   .filter(Boolean);
